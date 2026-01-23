@@ -86,9 +86,6 @@ def main():
                 # Annotate faces in the image
                 annotate_faces(image_file, detected_faces)
 
-
- 
-
     except Exception as ex:
         print(ex)
 
@@ -118,7 +115,6 @@ def annotate_faces(image_file, detected_faces):
     outputfile = 'detected_faces.jpg'
     fig.savefig(outputfile)
     print(f'  Results saved in {outputfile}\n')
-
 
 if __name__ == "__main__":
     main()
